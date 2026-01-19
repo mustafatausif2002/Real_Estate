@@ -5,14 +5,14 @@ if (session_status() === PHP_SESSION_NONE) {
 
 include "db.php";
 
-/* LOGOUT */
+
 if (isset($_POST['logout'])) {
     session_destroy();
     header("Location: index.php?page=buyerlogin");
     exit;
 }
 
-/* HANDLE MESSAGE SUBMIT */
+
 $msg_success = "";
 $msg_error = "";
 
@@ -32,7 +32,7 @@ if (isset($_POST['send_message'])) {
     }
 }
 
-/* FETCH PROPERTIES */
+
 $result = $conn->query("SELECT * FROM properties ORDER BY id DESC");
 ?>
 
