@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Registration</title>
+    <link rel="stylesheet" href="../css/registration.css">
+</head>
+<body>
+
+<div class="register-box">
+    <h2>Admin Registration</h2>
+
+    <form action="../php/registration.php" method="post">
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Enter full name" required>
+
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Enter email" required>
+
+        <label>Phone</label>
+        <input type="text" name="phone" placeholder="Enter phone number" required>
+
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Enter password" required>
+
+        <button type="submit" name="register">Register</button>
+    </form>
+
+    <p>Already registered? <a href="login.html">Login here</a></p>
+</div>
+
+</body>
+</html>
